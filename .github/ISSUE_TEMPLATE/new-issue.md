@@ -1,5 +1,4 @@
 ---
-name: Feature Request
 about: Issue
 title: ""
 labels: swift, task
