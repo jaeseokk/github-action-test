@@ -2,4 +2,4 @@ blank_issues_enabled: false
 contact_links:
   - name: Feature Request
     about: Request a new feature
-    url: https://github.com/jaeseokk/github-action-test/issues/new&template=new-issue.md&projects=project
+    url: https://github.com/jaeseokk/github-action-test/issues/new?template=new-issue.md&projects=jaeseokk%2Fgithub-action-test%2Fproject
