@@ -1,0 +1,22 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Set default project
+
+on:
+  issues:
+    types: [opened, labeled]
+  pull_request_target:
+    types: [opened, labeled]
+env:
+  MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+
+jobs:
+  assign_one_project:
+    runs-on: ubuntu-latest
+    name: Assign to Default Project
+    steps:
+    - name: Assign NEW issues and NEW pull requests to default project
+      uses: srggrs/assign-one-project-github-action@1.2.1
+      if: github.event.action == 'opened'
+      with:
+        project: 'https://github.com/jaeseokk/github-action-test/projects/1'
