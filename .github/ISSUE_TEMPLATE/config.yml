@@ -1,5 +1,20 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Feature Request
-    about: Request a new feature
-    url: https://github.com/jaeseokk/github-action-test/issues/new?template=new-issue.md&projects=jaeseokk%2Fgithub-action-test%2Fproject
+  - name: Architect Issue
+    about: Architect Issue
+    url: https://github.com/howbuild/frontend_v2/issues/new?labels=pkg:architect&template=template.md&projects=howbuild%2Ffrontend_v2%2F1
+  - name: Partners Issue
+    about: Partners Issue
+    url: https://github.com/howbuild/frontend_v2/issues/new?labels=pkg:partners&template=template.md&projects=howbuild%2Ffrontend_v2%2F1
+  - name: Sketch Issue
+    about: Sketch Issue
+    url: https://github.com/howbuild/frontend_v2/issues/new?labels=pkg:sketch&template=template.md&projects=howbuild%2Ffrontend_v2%2F1
+  - name: Swift Issue
+    about: Swift Issue
+    url: https://github.com/howbuild/frontend_v2/issues/new?labels=pkg:sketch&template=template.md&projects=howbuild%2Ffrontend_v2%2F1
+  - name: Shared Issue
+    about: Shared Issue
+    url: https://github.com/howbuild/frontend_v2/issues/new?labels=pkg:shared&template=template.md&projects=howbuild%2Ffrontend_v2%2F1
+  - name: Other Issue
+    about: Other Issue
+    url: https://github.com/howbuild/frontend_v2/issues/new?template=template.md&projects=howbuild%2Ffrontend_v2%2F1
