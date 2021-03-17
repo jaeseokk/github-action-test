@@ -1,7 +1,7 @@
 ---
 about: Issue
 title: ""
-labels: swift, task
+labels: bug
 assignees: ''
 project: jaeseokk/github-action-test/1
 
