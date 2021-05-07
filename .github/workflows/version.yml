@@ -24,3 +24,7 @@ jobs:
           git commit -m "Test commit"
           git tag `date +%s`
           git push --tags
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
