@@ -1,0 +1,26 @@
+name: Version
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Create version
+        run: |
+          git config --global user.name 'releasebot'
+          git config --global user.email 'releasebot@users.noreply.github.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          echo "test" >> test.txt
+          git add -A
+          git commit -m "Test commit"
+          git tag `date +%s`
+          git push --follow-tags
