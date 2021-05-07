@@ -7,13 +7,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    if: ${{ !contains(github.event.head_commit.message, '[version]') }}
 
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-          persist-credentials: false
 
       - name: Create version
         run: |
@@ -22,7 +22,7 @@ jobs:
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           echo "test" >> test.txt
           git add -A
-          git commit -m "Test commit"
+          git commit -m "[version] Test commit"
           git tag `date +%s`
       - name: Push changes
         uses: ad-m/github-push-action@master
