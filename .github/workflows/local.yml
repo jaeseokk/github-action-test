@@ -13,11 +13,4 @@ jobs:
         uses: actions/checkout@v2    
 
       - name: Local action test
-        usese: ./.github/actions/test
-
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.PAT }}
-          branch: ${{ github.ref }}
-          tags: true
+        uses: ./.github/actions/test
