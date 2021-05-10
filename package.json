@@ -1,0 +1,12 @@
+{
+  "name": "github-action-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jaeseokk/github-action-test.git",
+  "author": "jaeseokk <kang89kr@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@actions/core": "^1.2.7",
+    "@actions/github": "^4.0.0"
+  }
+}
