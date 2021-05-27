@@ -2,8 +2,7 @@ name: Release
 
 on:
   push:
-    tags:
-      - '*'
+    branches: [ main ]
 
 jobs:
   build:
@@ -11,8 +10,8 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - name: Create Release
-        uses: softprops/action-gh-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: jaeseokk/release-action@main
