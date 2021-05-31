@@ -1,10 +1,14 @@
 {
   "name": "github-action-test",
+  "private": true,
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/jaeseokk/github-action-test.git",
   "author": "jaeseokk <kang89kr@gmail.com>",
   "license": "MIT",
+  "workspaces": [
+    "packages/**/*"
+  ],
   "devDependencies": {
     "@actions/core": "^1.2.7",
     "@actions/github": "^4.0.0"
