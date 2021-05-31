@@ -1,5 +1,5 @@
 {
-  "name": "@hb/package-b",
+"name": "package-b",
   "version": "1.210531.0",
   "scripts": {},
   "dependencies": {},
