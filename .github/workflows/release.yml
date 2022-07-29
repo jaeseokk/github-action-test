@@ -15,3 +15,5 @@ jobs:
 
       - name: Create Release
         uses: jaeseokk/release-action@dev
+        with:
+          slackToken: ${{ secrets.SLACK_TOKEN }}
