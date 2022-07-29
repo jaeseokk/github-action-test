@@ -17,3 +17,4 @@ jobs:
         uses: jaeseokk/release-action@dev
         with:
           lastCommitMessage: ${{ github.event.head_commit.message }}
+          slackToken: ${{ secrets.SLACK_TOKEN }}
