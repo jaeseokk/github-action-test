@@ -15,5 +15,3 @@ jobs:
 
       - name: Create Release
         uses: jaeseokk/release-action@dev
-        with:
-          lastCommitMessage: ${{ github.event.head_commit.message }}
