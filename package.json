@@ -7,7 +7,8 @@
   "author": "jaeseokk <kang89kr@gmail.com>",
   "license": "MIT",
   "workspaces": [
-    "packages/**/*"
+    "packages/**/*",
+    "apps/**/*"
   ],
   "devDependencies": {
     "@actions/core": "^1.2.7",
